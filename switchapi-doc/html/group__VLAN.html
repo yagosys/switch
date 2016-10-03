@@ -161,8 +161,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga992f9e459f1f0c8172cba8ba9d12ce34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga75ac0a4c22050efd30e42b29e63a69dd"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#ga75ac0a4c22050efd30e42b29e63a69dd">switch_api_vlan_stats_disable</a> (switch_device_t device, switch_handle_t vlan_handle)</td></tr>
 <tr class="separator:ga75ac0a4c22050efd30e42b29e63a69dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae9ec08177105556f50cf3d265877a9ef"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#gae9ec08177105556f50cf3d265877a9ef">switch_api_vlan_stats_get</a> (switch_device_t device, switch_handle_t vlan_handle, uint8_t count, switch_vlan_stats_t *counter_ids, <a class="el" href="structswitch__counter__.html">switch_counter_t</a> *counters)</td></tr>
-<tr class="separator:gae9ec08177105556f50cf3d265877a9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9357b56f3c795242292cd3a65c944257"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#ga9357b56f3c795242292cd3a65c944257">switch_api_vlan_stats_get</a> (switch_device_t device, switch_handle_t vlan_handle, uint8_t count, switch_bd_stats_id_t *counter_ids, <a class="el" href="structswitch__counter__.html">switch_counter_t</a> *counters)</td></tr>
+<tr class="separator:ga9357b56f3c795242292cd3a65c944257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>API functions listed to configure VLAN The basic L2 domain for isolating traffic is configured using configuration of VLANs. The maximum number of VLANs supported on the device is limited to 4k (4096). The operations on VLAN correspond to setting up broadcast domain and optionally ingress and egress VLAN translate tables. </p>
@@ -1471,7 +1471,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gae9ec08177105556f50cf3d265877a9ef"></a>
+<a class="anchor" id="ga9357b56f3c795242292cd3a65c944257"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1496,7 +1496,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">switch_vlan_stats_t *&#160;</td>
+          <td class="paramtype">switch_bd_stats_id_t *&#160;</td>
           <td class="paramname"><em>counter_ids</em>, </td>
         </tr>
         <tr>
@@ -1597,7 +1597,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 17:14:14 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 3 2016 13:57:32 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

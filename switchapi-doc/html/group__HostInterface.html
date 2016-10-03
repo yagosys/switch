@@ -95,6 +95,14 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__hostif__.html">switch_hostif_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__packet__rx__key__.html">switch_packet_rx_key_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__packet__rx__action__.html">switch_packet_rx_action_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__packet__tx__key__.html">switch_packet_tx_key_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__packet__tx__action__.html">switch_packet_tx_action_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -120,57 +128,81 @@ Typedefs</h2></td></tr>
 <tr class="separator:ga4cc7d292eb85cda8bad336e93800066c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeb0d6cedcbaf8794cc964f72383bc404"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#gaeb0d6cedcbaf8794cc964f72383bc404">switch_hostif_rx_callback_fn</a> )(<a class="el" href="group__HostInterface.html#ga4ce1ae8f8cf1f559425b9897370ec3d7">switch_hostif_packet_t</a> *hostif_packet)</td></tr>
 <tr class="separator:gaeb0d6cedcbaf8794cc964f72383bc404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02171311cfcd5124b8ff0f695adf2761"><td class="memItemLeft" align="right" valign="top">typedef enum <br class="typebreak"/>
+<a class="el" href="group__HostInterface.html#gaa864bc5c22c1b5c902cdcdd561e6711a">switch_packet_vlan_action</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#ga02171311cfcd5124b8ff0f695adf2761">switch_packet_vlan_action_t</a></td></tr>
+<tr class="separator:ga02171311cfcd5124b8ff0f695adf2761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e0cd419681df882083010221c19637b"><td class="memItemLeft" align="right" valign="top">typedef enum <br class="typebreak"/>
+<a class="el" href="group__HostInterface.html#ga46c8ad282b7ac3200bc2692735e6cb29">switch_tx_bypass_flags_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#ga8e0cd419681df882083010221c19637b">switch_tx_bypass_flags_t</a></td></tr>
+<tr class="separator:ga8e0cd419681df882083010221c19637b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48005de551b017721c8e1dc3e807cd00"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structswitch__packet__rx__key__.html">switch_packet_rx_key_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#ga48005de551b017721c8e1dc3e807cd00">switch_packet_rx_key_t</a></td></tr>
+<tr class="separator:ga48005de551b017721c8e1dc3e807cd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d773a79cb5fd20a0464d7221d54bae6"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structswitch__packet__rx__action__.html">switch_packet_rx_action_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#ga4d773a79cb5fd20a0464d7221d54bae6">switch_packet_rx_action_t</a></td></tr>
+<tr class="separator:ga4d773a79cb5fd20a0464d7221d54bae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5472d47d12956dc3ca5065f9929930e5"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structswitch__packet__tx__key__.html">switch_packet_tx_key_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#ga5472d47d12956dc3ca5065f9929930e5">switch_packet_tx_key_t</a></td></tr>
+<tr class="separator:ga5472d47d12956dc3ca5065f9929930e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b536f9ddd311cc3102150f4e4a00df8"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structswitch__packet__tx__action__.html">switch_packet_tx_action_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#ga3b536f9ddd311cc3102150f4e4a00df8">switch_packet_tx_action_t</a></td></tr>
+<tr class="separator:ga3b536f9ddd311cc3102150f4e4a00df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga47bce1613be0ef92681ecaff80e2d130"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#ga47bce1613be0ef92681ecaff80e2d130">switch_hostif_reason_code_</a> { <br/>
 &#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_NONE</b> = 0x0, 
-<b>SWITCH_HOSTIF_REASON_CODE_STP</b> = 0x1, 
-<b>SWITCH_HOSTIF_REASON_CODE_LACP</b> = 0x2, 
-<b>SWITCH_HOSTIF_REASON_CODE_EAPOL</b> = 0x3, 
+<b>SWITCH_HOSTIF_REASON_CODE_CUSTOM</b> = 0x1, 
+<b>SWITCH_HOSTIF_REASON_CODE_DROP</b> = 0x2, 
+<b>SWITCH_HOSTIF_REASON_CODE_NULL_DROP</b> = 0x3, 
 <br/>
-&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_LLDP</b> = 0x4, 
-<b>SWITCH_HOSTIF_REASON_CODE_PVRST</b> = 0x5, 
-<b>SWITCH_HOSTIF_REASON_CODE_IGMP_TYPE_QUERY</b> = 0x6, 
-<b>SWITCH_HOSTIF_REASON_CODE_IGMP_TYPE_LEAVE</b> = 0x7, 
+&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_SFLOW_SAMPLE</b> = 0x4, 
+<b>SWITCH_HOSTIF_REASON_CODE_L2_START</b> = 0x100, 
+<b>SWITCH_HOSTIF_REASON_CODE_STP</b> = SWITCH_HOSTIF_REASON_CODE_L2_START, 
+<b>SWITCH_HOSTIF_REASON_CODE_LACP</b>, 
 <br/>
-&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_IGMP_TYPE_V1_REPORT</b> = 0x8, 
-<b>SWITCH_HOSTIF_REASON_CODE_IGMP_TYPE_V2_REPORT</b> = 0x9, 
-<b>SWITCH_HOSTIF_REASON_CODE_IGMP_TYPE_V3_REPORT</b> = 0xa, 
-<b>SWITCH_HOSTIF_REASON_CODE_SAMPLEPACKET</b> = 0xb, 
+&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_EAPOL</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_LLDP</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_PVRST</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_IGMP_TYPE_QUERY</b>, 
 <br/>
-&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_ARP_REQUEST</b> = 0xc, 
-<b>SWITCH_HOSTIF_REASON_CODE_ARP_RESPONSE</b> = 0xd, 
-<b>SWITCH_HOSTIF_REASON_CODE_DHCP</b> = 0xe, 
-<b>SWITCH_HOSTIF_REASON_CODE_OSPF</b> = 0xf, 
+&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_IGMP_TYPE_LEAVE</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_IGMP_TYPE_V1_REPORT</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_IGMP_TYPE_V2_REPORT</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_IGMP_TYPE_V3_REPORT</b>, 
 <br/>
-&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_PIM</b> = 0x10, 
-<b>SWITCH_HOSTIF_REASON_CODE_VRRP</b> = 0x11, 
-<b>SWITCH_HOSTIF_REASON_CODE_BGP</b> = 0x12, 
-<b>SWITCH_HOSTIF_REASON_CODE_DHCPV6</b> = 0x13, 
+&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_L3_START</b> = 0x200, 
+<b>SWITCH_HOSTIF_REASON_CODE_SAMPLEPACKET</b> = SWITCH_HOSTIF_REASON_CODE_L3_START, 
+<b>SWITCH_HOSTIF_REASON_CODE_ARP_REQUEST</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_ARP_RESPONSE</b>, 
 <br/>
-&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_OSPFV6</b> = 0x14, 
-<b>SWITCH_HOSTIF_REASON_CODE_VRRPV6</b> = 0x15, 
-<b>SWITCH_HOSTIF_REASON_CODE_BGPV6</b> = 0x16, 
-<b>SWITCH_HOSTIF_REASON_CODE_IPV6_NEIGHBOR_DISCOVERY</b> = 0x17, 
+&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_DHCP</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_OSPF</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_PIM</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_VRRP</b>, 
 <br/>
-&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_IPV6_MLD_V1_V2</b> = 0x18, 
-<b>SWITCH_HOSTIF_REASON_CODE_IPV6_MLD_V1_REPORT</b> = 0x19, 
-<b>SWITCH_HOSTIF_REASON_CODE_IPV6_MLD_V1_DONE</b> = 0x1a, 
-<b>SWITCH_HOSTIF_REASON_CODE_MLD_V2_REPORT</b> = 0x1b, 
+&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_BGP</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_DHCPV6</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_OSPFV6</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_VRRPV6</b>, 
 <br/>
-&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_L3_MTU_ERROR</b> = 0x1c, 
-<b>SWITCH_HOSTIF_REASON_CODE_TTL_ERROR</b> = 0x1d, 
-<b>SWITCH_HOSTIF_REASON_CODE_CUSTOM</b> = 0x100, 
-<b>SWITCH_HOSTIF_REASON_CODE_GLEAN</b> = 0x101, 
+&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_BGPV6</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_IPV6_NEIGHBOR_DISCOVERY</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_IPV6_MLD_V1_V2</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_IPV6_MLD_V1_REPORT</b>, 
 <br/>
-&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_MYIP</b> = 0x102, 
-<b>SWITCH_HOSTIF_REASON_CODE_DROP</b> = 0x103, 
-<b>SWITCH_HOSTIF_REASON_CODE_NULL_DROP</b> = 0x103, 
-<b>SWITCH_HOSTIF_REASON_CODE_ICMP_REDIRECT</b> = 0x104, 
+&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_IPV6_MLD_V1_DONE</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_MLD_V2_REPORT</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_L3_MTU_ERROR</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_TTL_ERROR</b>, 
 <br/>
-&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_SRC_IS_LINK_LOCAL</b> = 0x105, 
-<b>SWITCH_HOSTIF_REASON_CODE_MAX</b> = 0x200
+&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_GLEAN</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_MYIP</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_ICMP_REDIRECT</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_SRC_IS_LINK_LOCAL</b>, 
+<br/>
+&#160;&#160;<b>SWITCH_HOSTIF_REASON_CODE_L3_REDIRECT</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_BROADCAST</b>, 
+<b>SWITCH_HOSTIF_REASON_CODE_MAX</b>
 <br/>
  }</td></tr>
 <tr class="separator:ga47bce1613be0ef92681ecaff80e2d130"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,6 +211,25 @@ Enumerations</h2></td></tr>
 <b>SWITCH_HOSTIF_CHANNEL_NETDEV</b>
  }</td></tr>
 <tr class="separator:gaa2ce15e2b287af8f1da755470b496c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa864bc5c22c1b5c902cdcdd561e6711a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#gaa864bc5c22c1b5c902cdcdd561e6711a">switch_packet_vlan_action</a> { <b>SWITCH_PACKET_VLAN_NONE</b> = 0x0, 
+<b>SWITCH_PACKET_VLAN_ADD</b> = 0x1, 
+<b>SWITCH_PACKET_VLAN_REMOVE</b> = 0x2, 
+<b>SWITCH_PACKET_VLAN_SWAP</b> = 0x3
+ }</td></tr>
+<tr class="separator:gaa864bc5c22c1b5c902cdcdd561e6711a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46c8ad282b7ac3200bc2692735e6cb29"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#ga46c8ad282b7ac3200bc2692735e6cb29">switch_tx_bypass_flags_</a> { <br/>
+&#160;&#160;<b>SWITCH_BYPASS_NONE</b> = 0x0, 
+<b>SWITCH_BYPASS_L2</b> = (1 &lt;&lt; 0), 
+<b>SWITCH_BYPASS_L3</b> = (1 &lt;&lt; 1), 
+<b>SWITCH_BYPASS_ACL</b> = (1 &lt;&lt; 2), 
+<br/>
+&#160;&#160;<b>SWITCH_BYPASS_QOS</b> = (1 &lt;&lt; 3), 
+<b>SWITCH_BYPASS_METER</b> = (1 &lt;&lt; 4), 
+<b>SWITCH_BYPASS_SYSTEM_ACL</b> = (1 &lt;&lt; 5), 
+<b>SWITCH_BYPASS_ALL</b> = 0xFFFF
+<br/>
+ }</td></tr>
+<tr class="separator:ga46c8ad282b7ac3200bc2692735e6cb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -204,6 +255,18 @@ Functions</h2></td></tr>
 <tr class="separator:ga5147be9cfa361f2a244ca816414a3da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4a617e714bb70684df27b6850d925c21"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#ga4a617e714bb70684df27b6850d925c21">switch_api_cpu_nhop_get</a> (<a class="el" href="group__HostInterface.html#gaf7d3404134c60de64b21b19f1acc3dea">switch_hostif_reason_code_t</a> rcode)</td></tr>
 <tr class="separator:ga4a617e714bb70684df27b6850d925c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1cd8d7384de17b30a5938fcf4b24552"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#gac1cd8d7384de17b30a5938fcf4b24552">switch_api_packet_net_filter_tx_create</a> (switch_device_t device, <a class="el" href="group__HostInterface.html#ga5472d47d12956dc3ca5065f9929930e5">switch_packet_tx_key_t</a> *tx_key, <a class="el" href="group__HostInterface.html#ga3b536f9ddd311cc3102150f4e4a00df8">switch_packet_tx_action_t</a> *tx_action)</td></tr>
+<tr class="separator:gac1cd8d7384de17b30a5938fcf4b24552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae459f892f35741eef474d522d71a3d1e"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#gae459f892f35741eef474d522d71a3d1e">switch_api_packet_net_filter_tx_delete</a> (switch_device_t device, <a class="el" href="group__HostInterface.html#ga5472d47d12956dc3ca5065f9929930e5">switch_packet_tx_key_t</a> *tx_key)</td></tr>
+<tr class="separator:gae459f892f35741eef474d522d71a3d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88708441014231f15243979ed2e28094"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#ga88708441014231f15243979ed2e28094">switch_api_packet_net_filter_rx_create</a> (switch_device_t device, <a class="el" href="group__HostInterface.html#ga48005de551b017721c8e1dc3e807cd00">switch_packet_rx_key_t</a> *rx_key, <a class="el" href="group__HostInterface.html#ga4d773a79cb5fd20a0464d7221d54bae6">switch_packet_rx_action_t</a> *rx_action)</td></tr>
+<tr class="separator:ga88708441014231f15243979ed2e28094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga996169c2de1af6af350d4a4c6e6bbe00"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#ga996169c2de1af6af350d4a4c6e6bbe00">switch_api_packet_net_filter_rx_delete</a> (switch_device_t device, <a class="el" href="group__HostInterface.html#ga48005de551b017721c8e1dc3e807cd00">switch_packet_rx_key_t</a> *rx_key)</td></tr>
+<tr class="separator:ga996169c2de1af6af350d4a4c6e6bbe00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c4be17777f9ab9da1be15fa8112805f"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#ga9c4be17777f9ab9da1be15fa8112805f">switch_api_hostif_meter_create</a> (switch_device_t device, <a class="el" href="group__Meters.html#ga39b6cf8a3c569d2feee8e369fbc90bb4">switch_api_meter_t</a> *api_meter_info, switch_handle_t *meter_handle)</td></tr>
+<tr class="separator:ga9c4be17777f9ab9da1be15fa8112805f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e92310544a22bf351675d143b110bb6"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__HostInterface.html#ga0e92310544a22bf351675d143b110bb6">switch_api_hostif_meter_delete</a> (switch_device_t device, switch_handle_t meter_handle)</td></tr>
+<tr class="separator:ga0e92310544a22bf351675d143b110bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>API functions define and manipulate host interfaces </p>
@@ -313,6 +376,84 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga4d773a79cb5fd20a0464d7221d54bae6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structswitch__packet__rx__action__.html">switch_packet_rx_action_</a>  <a class="el" href="group__HostInterface.html#ga4d773a79cb5fd20a0464d7221d54bae6">switch_packet_rx_action_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rx net filter action </p>
+
+</div>
+</div>
+<a class="anchor" id="ga48005de551b017721c8e1dc3e807cd00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structswitch__packet__rx__key__.html">switch_packet_rx_key_</a>  <a class="el" href="group__HostInterface.html#ga48005de551b017721c8e1dc3e807cd00">switch_packet_rx_key_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Rx key for net filter </p>
+
+</div>
+</div>
+<a class="anchor" id="ga3b536f9ddd311cc3102150f4e4a00df8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structswitch__packet__tx__action__.html">switch_packet_tx_action_</a>  <a class="el" href="group__HostInterface.html#ga3b536f9ddd311cc3102150f4e4a00df8">switch_packet_tx_action_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tx net filter ation </p>
+
+</div>
+</div>
+<a class="anchor" id="ga5472d47d12956dc3ca5065f9929930e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structswitch__packet__tx__key__.html">switch_packet_tx_key_</a>  <a class="el" href="group__HostInterface.html#ga5472d47d12956dc3ca5065f9929930e5">switch_packet_tx_key_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tx key for net filter </p>
+
+</div>
+</div>
+<a class="anchor" id="ga02171311cfcd5124b8ff0f695adf2761"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="group__HostInterface.html#gaa864bc5c22c1b5c902cdcdd561e6711a">switch_packet_vlan_action</a>  <a class="el" href="group__HostInterface.html#ga02171311cfcd5124b8ff0f695adf2761">switch_packet_vlan_action_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Packet vlan action </p>
+
+</div>
+</div>
+<a class="anchor" id="ga8e0cd419681df882083010221c19637b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="group__HostInterface.html#ga46c8ad282b7ac3200bc2692735e6cb29">switch_tx_bypass_flags_</a>  <a class="el" href="group__HostInterface.html#ga8e0cd419681df882083010221c19637b">switch_tx_bypass_flags_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tx bypass flags </p>
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="gaa2ce15e2b287af8f1da755470b496c72"></a>
 <div class="memitem">
@@ -337,6 +478,32 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>switch hostif reason code </p>
+
+</div>
+</div>
+<a class="anchor" id="gaa864bc5c22c1b5c902cdcdd561e6711a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__HostInterface.html#gaa864bc5c22c1b5c902cdcdd561e6711a">switch_packet_vlan_action</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Packet vlan action </p>
+
+</div>
+</div>
+<a class="anchor" id="ga46c8ad282b7ac3200bc2692735e6cb29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__HostInterface.html#ga46c8ad282b7ac3200bc2692735e6cb29">switch_tx_bypass_flags_</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tx bypass flags </p>
 
 </div>
 </div>
@@ -534,6 +701,81 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga9c4be17777f9ab9da1be15fa8112805f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_hostif_meter_create </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Meters.html#ga39b6cf8a3c569d2feee8e369fbc90bb4">switch_api_meter_t</a> *&#160;</td>
+          <td class="paramname"><em>api_meter_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t *&#160;</td>
+          <td class="paramname"><em>meter_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>create a meter for control plane policing </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">api_meter_info</td><td>meter struct </td></tr>
+    <tr><td class="paramname">meter_handle</td><td>return meter handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0e92310544a22bf351675d143b110bb6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_hostif_meter_delete </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>meter_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>delete meter for control plane policing </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">meter_handle</td><td>meter handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ga984a49c2b0203873e3dec680e9790bb5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -704,10 +946,160 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga88708441014231f15243979ed2e28094"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_packet_net_filter_rx_create </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__HostInterface.html#ga48005de551b017721c8e1dc3e807cd00">switch_packet_rx_key_t</a> *&#160;</td>
+          <td class="paramname"><em>rx_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__HostInterface.html#ga4d773a79cb5fd20a0464d7221d54bae6">switch_packet_rx_action_t</a> *&#160;</td>
+          <td class="paramname"><em>rx_action</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create rx net filter </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">rx_key</td><td>rx net filter key </td></tr>
+    <tr><td class="paramname">rx_action</td><td>rx net filter action </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga996169c2de1af6af350d4a4c6e6bbe00"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_packet_net_filter_rx_delete </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__HostInterface.html#ga48005de551b017721c8e1dc3e807cd00">switch_packet_rx_key_t</a> *&#160;</td>
+          <td class="paramname"><em>rx_key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Delete rx net filter </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">rx_key</td><td>rx net filter key </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gac1cd8d7384de17b30a5938fcf4b24552"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_packet_net_filter_tx_create </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__HostInterface.html#ga5472d47d12956dc3ca5065f9929930e5">switch_packet_tx_key_t</a> *&#160;</td>
+          <td class="paramname"><em>tx_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__HostInterface.html#ga3b536f9ddd311cc3102150f4e4a00df8">switch_packet_tx_action_t</a> *&#160;</td>
+          <td class="paramname"><em>tx_action</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Create tx net filter </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">tx_key</td><td>tx net filter key </td></tr>
+    <tr><td class="paramname">tx_action</td><td>tx net filter action </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gae459f892f35741eef474d522d71a3d1e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_packet_net_filter_tx_delete </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__HostInterface.html#ga5472d47d12956dc3ca5065f9929930e5">switch_packet_tx_key_t</a> *&#160;</td>
+          <td class="paramname"><em>tx_key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Delete tx net filter </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">tx_key</td><td>tx net filter key </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 17:14:14 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 3 2016 13:57:32 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

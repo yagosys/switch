@@ -99,10 +99,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a674522d0fc324f1e079f70ce37eac1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae162f1414874cd03f57b722ca1acb8e9"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__ip__value__.html#ae162f1414874cd03f57b722ca1acb8e9">ip_proto</a></td></tr>
 <tr class="separator:ae162f1414874cd03f57b722ca1acb8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa5556a5b1d57fdcfb9f77925f625aa3"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__ip__value__.html#aaa5556a5b1d57fdcfb9f77925f625aa3">l4_source_port</a></td></tr>
-<tr class="separator:aaa5556a5b1d57fdcfb9f77925f625aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0268da45a9c739a38f8445dd32a70a88"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__ip__value__.html#a0268da45a9c739a38f8445dd32a70a88">l4_dest_port</a></td></tr>
-<tr class="separator:a0268da45a9c739a38f8445dd32a70a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b8e3f43be975d5377dc8825f6a9ebaf"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__ip__value__.html#a9b8e3f43be975d5377dc8825f6a9ebaf">icmp_type</a></td></tr>
 <tr class="separator:a9b8e3f43be975d5377dc8825f6a9ebaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d310c1f72cf97ca30cd549785650424"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__ip__value__.html#a6d310c1f72cf97ca30cd549785650424">icmp_code</a></td></tr>
@@ -119,10 +115,27 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab4432857f0438d287379aba3016f8bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d15a0ce91b2fd8dd6077487bf8f20db"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__ip__value__.html#a0d15a0ce91b2fd8dd6077487bf8f20db">ip_frag</a></td></tr>
 <tr class="separator:a0d15a0ce91b2fd8dd6077487bf8f20db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ebf3b5531ac34096302414c28b12eb"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__ip__value__.html#aa1ebf3b5531ac34096302414c28b12eb">sport_range_handle</a></td></tr>
+<tr class="separator:aa1ebf3b5531ac34096302414c28b12eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ae8fe982d3f5d4148c30a9b93e1edf"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__ip__value__.html#ac2ae8fe982d3f5d4148c30a9b93e1edf">dport_range_handle</a></td></tr>
+<tr class="separator:ac2ae8fe982d3f5d4148c30a9b93e1edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Acl IP field list </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="ac2ae8fe982d3f5d4148c30a9b93e1edf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_handle_t switch_acl_ip_value_::dport_range_handle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dport range handle </p>
+
+</div>
+</div>
 <a class="anchor" id="a12422002b0ded28763363a1eb4c300a1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -227,29 +240,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0268da45a9c739a38f8445dd32a70a88"></a>
+<a class="anchor" id="aa1ebf3b5531ac34096302414c28b12eb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned short switch_acl_ip_value_::l4_dest_port</td>
+          <td class="memname">switch_handle_t switch_acl_ip_value_::sport_range_handle</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>destination port </p>
-
-</div>
-</div>
-<a class="anchor" id="aaa5556a5b1d57fdcfb9f77925f625aa3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned short switch_acl_ip_value_::l4_source_port</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>souce port </p>
+<p>sport range handle </p>
 
 </div>
 </div>
@@ -298,7 +298,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 17:14:14 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 3 2016 13:57:32 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

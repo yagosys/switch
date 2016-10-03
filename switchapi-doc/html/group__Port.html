@@ -76,6 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
@@ -90,19 +91,23 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__port__pause__info__.html">switch_port_pause_info_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__pfc__config__.html">switch_pfc_config_</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gaf1c89c35e752ab3a84fb371cd4f01d53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#gaf1c89c35e752ab3a84fb371cd4f01d53">SWITCH_MAX_PPG</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:gaf1c89c35e752ab3a84fb371cd4f01d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:gacee54bfba8ae98d2098baa57aa20071a"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
 <a class="el" href="structswitch__api__port__info__.html">switch_api_port_info_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#gacee54bfba8ae98d2098baa57aa20071a">switch_api_port_info_t</a></td></tr>
 <tr class="separator:gacee54bfba8ae98d2098baa57aa20071a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga259e813c7b4506b83895267e36007eeb"><td class="memItemLeft" align="right" valign="top">typedef enum <br class="typebreak"/>
+<a class="el" href="group__Port.html#gabbe3370f622942b9e1bb3aaa58e21c72">switch_flowcontrol_type_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga259e813c7b4506b83895267e36007eeb">switch_flowcontrol_type_t</a></td></tr>
+<tr class="separator:ga259e813c7b4506b83895267e36007eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga37bc62721944eb5c3a0e123be73a0a3a"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
 <a class="el" href="structswitch__port__pause__info__.html">switch_port_pause_info_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga37bc62721944eb5c3a0e123be73a0a3a">switch_port_pause_info_t</a></td></tr>
 <tr class="separator:ga37bc62721944eb5c3a0e123be73a0a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7a3313acef348c2708142e1226fd6d5f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structswitch__pfc__config__.html">switch_pfc_config_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga7a3313acef348c2708142e1226fd6d5f">switch_pfc_config_t</a></td></tr>
-<tr class="separator:ga7a3313acef348c2708142e1226fd6d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -118,6 +123,11 @@ Enumerations</h2></td></tr>
 <br/>
  }</td></tr>
 <tr class="separator:gaaeb492389413226d6bdf953cbc3732b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbe3370f622942b9e1bb3aaa58e21c72"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#gabbe3370f622942b9e1bb3aaa58e21c72">switch_flowcontrol_type_</a> { <b>SWITCH_FLOWCONTROL_TYPE_NONE</b> = 0, 
+<b>SWITCH_FLOWCONTROL_TYPE_PFC</b> = 1, 
+<b>SWITCH_FLOWCONTROL_TYPE_PAUSE</b> = 2
+ }</td></tr>
+<tr class="separator:gabbe3370f622942b9e1bb3aaa58e21c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -135,12 +145,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga6754fd7a836974685baaf2fea00f18cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf51d09533b80137474fde02f5f4a67f9"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#gaf51d09533b80137474fde02f5f4a67f9">switch_api_port_autoneg_get</a> (switch_device_t device, switch_port_t port, bool *enable)</td></tr>
 <tr class="separator:gaf51d09533b80137474fde02f5f4a67f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga04203ed9b24248ec501b86b8441d7e66"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga04203ed9b24248ec501b86b8441d7e66">switch_api_port_pause_set</a> (switch_device_t device, switch_port_t port, <a class="el" href="group__Port.html#ga37bc62721944eb5c3a0e123be73a0a3a">switch_port_pause_info_t</a> *pause_info)</td></tr>
-<tr class="separator:ga04203ed9b24248ec501b86b8441d7e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf085513878ec6695d73d08cc8c223314"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#gaf085513878ec6695d73d08cc8c223314">switch_api_port_pause_get</a> (switch_device_t device, switch_port_t port, <a class="el" href="group__Port.html#ga37bc62721944eb5c3a0e123be73a0a3a">switch_port_pause_info_t</a> *pause_info)</td></tr>
-<tr class="separator:gaf085513878ec6695d73d08cc8c223314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga284ffd52be43b5c7189237660f535455"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga284ffd52be43b5c7189237660f535455">switch_api_port_pfc_config_set</a> (switch_device_t device, switch_port_t port, uint8_t queue, <a class="el" href="group__Port.html#ga7a3313acef348c2708142e1226fd6d5f">switch_pfc_config_t</a> *pfc)</td></tr>
-<tr class="separator:ga284ffd52be43b5c7189237660f535455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4acc00bd4639dbda07ecec19af81aa84"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga4acc00bd4639dbda07ecec19af81aa84">switch_api_port_state_get</a> (switch_device_t device, switch_port_t port, bool *up)</td></tr>
 <tr class="separator:ga4acc00bd4639dbda07ecec19af81aa84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga34d4ddbb6d0bc100e803641c3fe7ef3f"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga34d4ddbb6d0bc100e803641c3fe7ef3f">switch_api_port_debounce_set</a> (switch_device_t device, switch_port_t port, unsigned int interval)</td></tr>
@@ -167,11 +171,63 @@ Functions</h2></td></tr>
 <tr class="separator:ga285aa5652f43eb1e1c9b6e2bb54447fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeff99bdf54adfdd6d58dd4d9d5181772"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#gaeff99bdf54adfdd6d58dd4d9d5181772">switch_api_storm_control_stats_get</a> (switch_device_t device, switch_handle_t meter_handle, uint8_t count, <a class="el" href="group__Meters.html#gab40539e6576f50ec5132814a07f08bf6">switch_meter_stats_t</a> *counter_ids, <a class="el" href="structswitch__counter__.html">switch_counter_t</a> *counters)</td></tr>
 <tr class="separator:gaeff99bdf54adfdd6d58dd4d9d5181772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58ad8313a65cd3a1e8b52bab0656eee6"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga58ad8313a65cd3a1e8b52bab0656eee6">switch_api_ppg_get</a> (switch_device_t device, switch_handle_t port_handle, uint8_t *num_ppgs, switch_handle_t *ppg_handles)</td></tr>
+<tr class="separator:ga58ad8313a65cd3a1e8b52bab0656eee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc1db4db117fd3876c158bbe7b4df187"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#gacc1db4db117fd3876c158bbe7b4df187">switch_api_port_drop_limit_set</a> (switch_device_t device, switch_handle_t port_handle, uint32_t num_bytes)</td></tr>
+<tr class="separator:gacc1db4db117fd3876c158bbe7b4df187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f864d2070ca27f5757c8e94fdbe16ae"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga6f864d2070ca27f5757c8e94fdbe16ae">switch_api_port_drop_hysteresis_set</a> (switch_device_t device, switch_handle_t port_handle, uint32_t num_bytes)</td></tr>
+<tr class="separator:ga6f864d2070ca27f5757c8e94fdbe16ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga790ac962b39e5a35633aac1d59274df5"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga790ac962b39e5a35633aac1d59274df5">switch_api_port_cos_mapping</a> (switch_device_t device, switch_handle_t port_handle, switch_handle_t ppg_handle, uint8_t cos_bitmap)</td></tr>
+<tr class="separator:ga790ac962b39e5a35633aac1d59274df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39b531512e85981cb4e7f99318c3e063"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga39b531512e85981cb4e7f99318c3e063">switch_api_port_pfc_cos_mapping</a> (switch_device_t device, switch_handle_t port_handle, uint8_t *cos_to_icos)</td></tr>
+<tr class="separator:ga39b531512e85981cb4e7f99318c3e063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e6f45a9496d264af46b4e48d9a09d97"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga6e6f45a9496d264af46b4e48d9a09d97">switch_api_port_shaping_enable</a> (switch_device_t device, switch_handle_t port_handle, <a class="el" href="group__Meters.html#gaf0593a04026dacc8d7cf40c93b990bb5">switch_shaper_type_t</a> shaper_type, uint32_t burst_size, uint32_t rate)</td></tr>
+<tr class="separator:ga6e6f45a9496d264af46b4e48d9a09d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga349d90d8b9e613a7d2a23764d261c4b7"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga349d90d8b9e613a7d2a23764d261c4b7">switch_api_port_shaping_disable</a> (switch_device_t device, switch_handle_t port_handle)</td></tr>
+<tr class="separator:ga349d90d8b9e613a7d2a23764d261c4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f31b271310e845dd60834e009f98b73"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga3f31b271310e845dd60834e009f98b73">switch_api_port_trust_dscp_set</a> (switch_device_t device, switch_handle_t port_handle, bool trust_dscp)</td></tr>
+<tr class="separator:ga3f31b271310e845dd60834e009f98b73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga198111a47492d602a16fd096fcd8807a"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga198111a47492d602a16fd096fcd8807a">switch_api_port_trust_pcp_set</a> (switch_device_t device, switch_handle_t port_handle, bool trust_pcp)</td></tr>
+<tr class="separator:ga198111a47492d602a16fd096fcd8807a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0189f9437a11a6c75fcdfd49fdaf444"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#gad0189f9437a11a6c75fcdfd49fdaf444">switch_api_ppg_lossless_enable</a> (switch_device_t device, switch_handle_t ppg_handle, bool enable)</td></tr>
+<tr class="separator:gad0189f9437a11a6c75fcdfd49fdaf444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga870eecc7306b30712441f5a81db26d81"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga870eecc7306b30712441f5a81db26d81">switch_api_ppg_guaranteed_limit_set</a> (switch_device_t device, switch_handle_t ppg_handle, uint32_t num_bytes)</td></tr>
+<tr class="separator:ga870eecc7306b30712441f5a81db26d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d92200852af4afe776553013791ac43"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga5d92200852af4afe776553013791ac43">switch_api_ppg_skid_limit_set</a> (switch_device_t device, switch_handle_t ppg_handle, uint32_t num_bytes)</td></tr>
+<tr class="separator:ga5d92200852af4afe776553013791ac43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6855c2a5526e288e5641d6199ab5218"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#gaf6855c2a5526e288e5641d6199ab5218">switch_api_ppg_skid_hysteresis_set</a> (switch_device_t device, switch_handle_t ppg_handle, uint32_t num_bytes)</td></tr>
+<tr class="separator:gaf6855c2a5526e288e5641d6199ab5218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34d51ea3998db1770eb9407d78ebd6b8"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga34d51ea3998db1770eb9407d78ebd6b8">switch_api_port_qos_group_ingress_set</a> (switch_device_t device, switch_handle_t port_handle, switch_handle_t qos_group)</td></tr>
+<tr class="separator:ga34d51ea3998db1770eb9407d78ebd6b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b82c770363f57e50782a36cf82404b9"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga2b82c770363f57e50782a36cf82404b9">switch_api_port_qos_group_tc_set</a> (switch_device_t device, switch_handle_t port_handle, switch_handle_t qos_group)</td></tr>
+<tr class="separator:ga2b82c770363f57e50782a36cf82404b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6bc054f158879dbcdde33f1e9999b01d"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga6bc054f158879dbcdde33f1e9999b01d">switch_api_port_qos_group_egress_set</a> (switch_device_t device, switch_handle_t port_handle, switch_handle_t qos_group)</td></tr>
+<tr class="separator:ga6bc054f158879dbcdde33f1e9999b01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6a69047950e2a21e2d1a6f1ddc1df92"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#gae6a69047950e2a21e2d1a6f1ddc1df92">switch_api_port_tc_default_set</a> (switch_device_t device, switch_handle_t port_handle, uint16_t tc)</td></tr>
+<tr class="separator:gae6a69047950e2a21e2d1a6f1ddc1df92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92721b7ede03602aa2b58c4e67d64254"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga92721b7ede03602aa2b58c4e67d64254">switch_api_port_color_default_set</a> (switch_device_t device, switch_handle_t port_handle, switch_color_t color)</td></tr>
+<tr class="separator:ga92721b7ede03602aa2b58c4e67d64254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26c2f4d6224dbdb8c95141df7028de4f"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga26c2f4d6224dbdb8c95141df7028de4f">switch_api_port_flowcontrol_mode_set</a> (switch_device_t device, switch_handle_t port_handle, <a class="el" href="group__Port.html#ga259e813c7b4506b83895267e36007eeb">switch_flowcontrol_type_t</a> flow_control)</td></tr>
+<tr class="separator:ga26c2f4d6224dbdb8c95141df7028de4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8cc20266d5e6a9b985cfd96e271d5297"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga8cc20266d5e6a9b985cfd96e271d5297">switch_api_port_print_all</a> (void)</td></tr>
 <tr class="separator:ga8cc20266d5e6a9b985cfd96e271d5297"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>API functions listed to configure the ports. Mostly related to MAC programming The basic configuration on the port dictates the MAC programming. The modes can be set to one of 1x100G, 2x50G, 4x25G, 2x40G or 4x10G. The ports can be configured with an administrative mode and default behavior can be set. The tables that get modified in response to the port APIs are mostly the early stage tables. The port can have a default, which generally allows tagging of untagged packets to this default domain for forwarding the packets through the device. </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="gaf1c89c35e752ab3a84fb371cd4f01d53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SWITCH_MAX_PPG&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Maximum number of port priority groups </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="gacee54bfba8ae98d2098baa57aa20071a"></a>
 <div class="memitem">
@@ -186,16 +242,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga7a3313acef348c2708142e1226fd6d5f"></a>
+<a class="anchor" id="ga259e813c7b4506b83895267e36007eeb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structswitch__pfc__config__.html">switch_pfc_config_</a>  <a class="el" href="group__Port.html#ga7a3313acef348c2708142e1226fd6d5f">switch_pfc_config_t</a></td>
+          <td class="memname">typedef enum <a class="el" href="group__Port.html#gabbe3370f622942b9e1bb3aaa58e21c72">switch_flowcontrol_type_</a>  <a class="el" href="group__Port.html#ga259e813c7b4506b83895267e36007eeb">switch_flowcontrol_type_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Priority Flow Control configuration </p>
+<p>port flowcontrol type </p>
 
 </div>
 </div>
@@ -213,6 +269,19 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="gabbe3370f622942b9e1bb3aaa58e21c72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__Port.html#gabbe3370f622942b9e1bb3aaa58e21c72">switch_flowcontrol_type_</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>port flowcontrol type </p>
+
+</div>
+</div>
 <a class="anchor" id="gaaeb492389413226d6bdf953cbc3732b8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -332,6 +401,95 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga92721b7ede03602aa2b58c4e67d64254"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_port_color_default_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_color_t&#160;</td>
+          <td class="paramname"><em>color</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set default color on port </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">color</td><td>packet color </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga790ac962b39e5a35633aac1d59274df5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_port_cos_mapping </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>ppg_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>cos_bitmap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set port to cos mapping in ingress </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">ppg_handle</td><td>priority group handle </td></tr>
+    <tr><td class="paramname">cos_bitmap</td><td>cos bitmap </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ga34d4ddbb6d0bc100e803641c3fe7ef3f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -367,6 +525,88 @@ Functions</h2></td></tr>
     <tr><td class="paramname">device</td><td>device to use </td></tr>
     <tr><td class="paramname">port</td><td>port on device to get </td></tr>
     <tr><td class="paramname">interval</td><td>microseconds to debounce </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6f864d2070ca27f5757c8e94fdbe16ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_port_drop_hysteresis_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>port drop hysteresis set </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">num_bytes</td><td>number of bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gacc1db4db117fd3876c158bbe7b4df187"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_port_drop_limit_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>port drop limit set </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">num_bytes</td><td>number of bytes </td></tr>
   </table>
   </dd>
 </dl>
@@ -490,6 +730,47 @@ Functions</h2></td></tr>
     <tr><td class="paramname">device</td><td>device to use </td></tr>
     <tr><td class="paramname">port</td><td>port on device to set </td></tr>
     <tr><td class="paramname">enable</td><td>TRUE =&gt; port is enabled FALSE =&gt; Port is disabled </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga26c2f4d6224dbdb8c95141df7028de4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_port_flowcontrol_mode_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Port.html#ga259e813c7b4506b83895267e36007eeb">switch_flowcontrol_type_t</a>&#160;</td>
+          <td class="paramname"><em>flow_control</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set port flowcontrol mode </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">flow_control</td><td>flow control type </td></tr>
   </table>
   </dd>
 </dl>
@@ -742,12 +1023,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaf085513878ec6695d73d08cc8c223314"></a>
+<a class="anchor" id="ga39b531512e85981cb4e7f99318c3e063"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">switch_status_t switch_api_port_pause_get </td>
+          <td class="memname">switch_status_t switch_api_port_pfc_cos_mapping </td>
           <td>(</td>
           <td class="paramtype">switch_device_t&#160;</td>
           <td class="paramname"><em>device</em>, </td>
@@ -755,14 +1036,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">switch_port_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__Port.html#ga37bc62721944eb5c3a0e123be73a0a3a">switch_port_pause_info_t</a> *&#160;</td>
-          <td class="paramname"><em>pause_info</em>&#160;</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>cos_to_icos</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -771,101 +1052,12 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Port PAUSE control get </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device</td><td>device to use </td></tr>
-    <tr><td class="paramname">port</td><td>port on device to get </td></tr>
-    <tr><td class="paramname">pause_info</td><td>Pause informaion for the port </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga04203ed9b24248ec501b86b8441d7e66"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">switch_status_t switch_api_port_pause_set </td>
-          <td>(</td>
-          <td class="paramtype">switch_device_t&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">switch_port_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__Port.html#ga37bc62721944eb5c3a0e123be73a0a3a">switch_port_pause_info_t</a> *&#160;</td>
-          <td class="paramname"><em>pause_info</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Port PAUSE control set </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device</td><td>device to use </td></tr>
-    <tr><td class="paramname">port</td><td>port on device to set </td></tr>
-    <tr><td class="paramname">pause_info</td><td>Pause informaion for the port </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga284ffd52be43b5c7189237660f535455"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">switch_status_t switch_api_port_pfc_config_set </td>
-          <td>(</td>
-          <td class="paramtype">switch_device_t&#160;</td>
-          <td class="paramname"><em>device</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">switch_port_t&#160;</td>
-          <td class="paramname"><em>port</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>queue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__Port.html#ga7a3313acef348c2708142e1226fd6d5f">switch_pfc_config_t</a> *&#160;</td>
-          <td class="paramname"><em>pfc</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the threshholds and mode or PFC on a port </p>
+<p>Set port cos and pfc cos mapping </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>device </td></tr>
-    <tr><td class="paramname">port</td><td>port on device to configure </td></tr>
-    <tr><td class="paramname">queue</td><td>on the port to configure </td></tr>
-    <tr><td class="paramname">pfc</td><td>PFC configuration parameters </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">cos_to_icos</td><td>cos to ingress cos bitmap </td></tr>
   </table>
   </dd>
 </dl>
@@ -937,6 +1129,129 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga6bc054f158879dbcdde33f1e9999b01d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_port_qos_group_egress_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>qos_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set egress qos group on port </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">qos_group</td><td>qos group </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga34d51ea3998db1770eb9407d78ebd6b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_port_qos_group_ingress_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>qos_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set ingress qos group on port </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">qos_group</td><td>qos group </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2b82c770363f57e50782a36cf82404b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_port_qos_group_tc_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>qos_group</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set tc qos group on port </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">qos_group</td><td>qos group </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ga0df026f78db7fea364622bd6b8fda283"></a>
 <div class="memitem">
 <div class="memproto">
@@ -965,6 +1280,95 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">device</td><td>device to use </td></tr>
     <tr><td class="paramname">api_port_info</td><td>port information inclduing port number (portnumber specified in port_info-&gt;port_number) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga349d90d8b9e613a7d2a23764d261c4b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_port_shaping_disable </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Disable port shaping </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga6e6f45a9496d264af46b4e48d9a09d97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_port_shaping_enable </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__Meters.html#gaf0593a04026dacc8d7cf40c93b990bb5">switch_shaper_type_t</a>&#160;</td>
+          <td class="paramname"><em>shaper_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>burst_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>rate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enable port shaping </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">shaper_type</td><td>shaper type in bytes or packets </td></tr>
+    <tr><td class="paramname">burst_size</td><td>burst size </td></tr>
+    <tr><td class="paramname">rate</td><td>rate </td></tr>
   </table>
   </dd>
 </dl>
@@ -1190,6 +1594,341 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gae6a69047950e2a21e2d1a6f1ddc1df92"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_port_tc_default_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>tc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set default tc on port </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">tc</td><td>traffic class </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga3f31b271310e845dd60834e009f98b73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_port_trust_dscp_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>trust_dscp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>enable dscp trust on port </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">trust_dscp</td><td>dscp trust </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga198111a47492d602a16fd096fcd8807a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_port_trust_pcp_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>trust_pcp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>enable pcp trust on port </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">trust_pcp</td><td>pcp trust </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga58ad8313a65cd3a1e8b52bab0656eee6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_ppg_get </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>port_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>num_ppgs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t *&#160;</td>
+          <td class="paramname"><em>ppg_handles</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get port priority groups </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">port_handle</td><td>port handle </td></tr>
+    <tr><td class="paramname">num_ppgs</td><td>number of ppgs </td></tr>
+    <tr><td class="paramname">ppg_handles</td><td>list of ppg handles </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga870eecc7306b30712441f5a81db26d81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_ppg_guaranteed_limit_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>ppg_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set guaranteed limit on ppg </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">ppg_handle</td><td>ppg handle </td></tr>
+    <tr><td class="paramname">num_bytes</td><td>number of bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gad0189f9437a11a6c75fcdfd49fdaf444"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_ppg_lossless_enable </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>ppg_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>enable lossless mode in port priority group </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">ppg_handle</td><td>ppg handle </td></tr>
+    <tr><td class="paramname">enable</td><td>enable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf6855c2a5526e288e5641d6199ab5218"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_ppg_skid_hysteresis_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>ppg_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set hystersis lmit on ppg </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">ppg_handle</td><td>ppg handle </td></tr>
+    <tr><td class="paramname">num_bytes</td><td>number of bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5d92200852af4afe776553013791ac43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_ppg_skid_limit_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>ppg_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>num_bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>set skid lmit on ppg </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">ppg_handle</td><td>ppg handle </td></tr>
+    <tr><td class="paramname">num_bytes</td><td>number of bytes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="gaeff99bdf54adfdd6d58dd4d9d5181772"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1248,7 +1987,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 17:14:14 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 3 2016 13:57:32 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

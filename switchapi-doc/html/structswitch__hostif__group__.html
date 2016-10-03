@@ -93,24 +93,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9386bd322f706872ad7063de8332977d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__hostif__group__.html#a9386bd322f706872ad7063de8332977d">egress_queue</a></td></tr>
-<tr class="separator:a9386bd322f706872ad7063de8332977d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fa2c479c46f505dcf0a99c2c99d7edb"><td class="memItemLeft" align="right" valign="top">switch_qid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__hostif__group__.html#a0fa2c479c46f505dcf0a99c2c99d7edb">queue_id</a></td></tr>
+<tr class="separator:a0fa2c479c46f505dcf0a99c2c99d7edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec849d7e62c3cb61392fd68a0c595d12"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__hostif__group__.html#aec849d7e62c3cb61392fd68a0c595d12">priority</a></td></tr>
 <tr class="separator:aec849d7e62c3cb61392fd68a0c595d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68dc49925b88be0834b66537c87e7d69"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__hostif__group__.html#a68dc49925b88be0834b66537c87e7d69">policer_handle</a></td></tr>
+<tr class="separator:a68dc49925b88be0834b66537c87e7d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>switch hostif group </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a9386bd322f706872ad7063de8332977d"></a>
+<a class="anchor" id="a68dc49925b88be0834b66537c87e7d69"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t switch_hostif_group_::egress_queue</td>
+          <td class="memname">switch_handle_t switch_hostif_group_::policer_handle</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>egress queue number </p>
+<p>policer id </p>
 
 </div>
 </div>
@@ -127,13 +129,26 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0fa2c479c46f505dcf0a99c2c99d7edb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_qid_t switch_hostif_group_::queue_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>egress queue number </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="switch__hostif_8h_source.html">switch_hostif.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 17:14:14 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 3 2016 13:57:32 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

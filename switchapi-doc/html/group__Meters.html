@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>switchapi: Meters Switching API</title>
+<title>switchapi: API</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Meters Switching API</div>  </div>
+<div class="title">API</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
@@ -98,8 +98,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:gaaeb61a3b23a42d526c55c3da4a7fd97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad7cae3bb5fe8c3f4e596767c0143073e"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__Meters.html#ga943d0a12b4ae143277b5342a7f2db808">switch_meter_type_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Meters.html#gad7cae3bb5fe8c3f4e596767c0143073e">switch_meter_type_t</a></td></tr>
 <tr class="separator:gad7cae3bb5fe8c3f4e596767c0143073e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad3a7cfa148ecda9409a963f5641d55df"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__Meters.html#ga58a431e30f36a3d12237217bcbb49a70">switch_meter_color_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Meters.html#gad3a7cfa148ecda9409a963f5641d55df">switch_meter_color_t</a></td></tr>
-<tr class="separator:gad3a7cfa148ecda9409a963f5641d55df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf0593a04026dacc8d7cf40c93b990bb5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__Meters.html#gad7cae3bb5fe8c3f4e596767c0143073e">switch_meter_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Meters.html#gaf0593a04026dacc8d7cf40c93b990bb5">switch_shaper_type_t</a></td></tr>
+<tr class="separator:gaf0593a04026dacc8d7cf40c93b990bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab40539e6576f50ec5132814a07f08bf6"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__Meters.html#ga6ef20e601730bfb0753632e2032f4bc2">switch_meter_stats_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Meters.html#gab40539e6576f50ec5132814a07f08bf6">switch_meter_stats_t</a></td></tr>
 <tr class="separator:gab40539e6576f50ec5132814a07f08bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga244ef2ce05d89f779a221e79f1550c84"><td class="memItemLeft" align="right" valign="top">typedef uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Meters.html#ga244ef2ce05d89f779a221e79f1550c84">switch_cbs_t</a></td></tr>
@@ -130,12 +130,6 @@ Enumerations</h2></td></tr>
 <b>SWITCH_METER_TYPE_BYTES</b> = 2
  }</td></tr>
 <tr class="separator:ga943d0a12b4ae143277b5342a7f2db808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga58a431e30f36a3d12237217bcbb49a70"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Meters.html#ga58a431e30f36a3d12237217bcbb49a70">switch_meter_color_</a> { <b>SWITCH_METER_COLOR_GREEN</b>, 
-<b>SWITCH_METER_COLOR_YELLOW</b>, 
-<b>SWITCH_METER_COLOR_RED</b>, 
-<b>SWITCH_METER_COLOR_MAX</b>
- }</td></tr>
-<tr class="separator:ga58a431e30f36a3d12237217bcbb49a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6ef20e601730bfb0753632e2032f4bc2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Meters.html#ga6ef20e601730bfb0753632e2032f4bc2">switch_meter_stats_</a> { <b>SWITCH_METER_STATS_GREEEN</b>, 
 <b>SWITCH_METER_STATS_YELLOW</b>, 
 <b>SWITCH_METER_STATS_RED</b>, 
@@ -209,19 +203,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gad3a7cfa148ecda9409a963f5641d55df"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef enum <a class="el" href="group__Meters.html#ga58a431e30f36a3d12237217bcbb49a70">switch_meter_color_</a>  <a class="el" href="group__Meters.html#gad3a7cfa148ecda9409a963f5641d55df">switch_meter_color_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Meter color </p>
-
-</div>
-</div>
 <a class="anchor" id="ga4f1f248e28a5021bd053f9ed29c30bfe"></a>
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +225,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Meter stats </p>
+<p>Meter stat id </p>
 
 </div>
 </div>
@@ -287,20 +268,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga58a431e30f36a3d12237217bcbb49a70"></a>
+<a class="anchor" id="gaf0593a04026dacc8d7cf40c93b990bb5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group__Meters.html#ga58a431e30f36a3d12237217bcbb49a70">switch_meter_color_</a></td>
+          <td class="memname">typedef <a class="el" href="group__Meters.html#gad7cae3bb5fe8c3f4e596767c0143073e">switch_meter_type_t</a> <a class="el" href="group__Meters.html#gaf0593a04026dacc8d7cf40c93b990bb5">switch_shaper_type_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Meter color </p>
+<p>shaper type </p>
 
 </div>
 </div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="ga966ad346033691964511ae77a63a2750"></a>
 <div class="memitem">
 <div class="memproto">
@@ -358,7 +339,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Meter stats </p>
+<p>Meter stat id </p>
 
 </div>
 </div>
@@ -543,7 +524,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 17:14:14 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 3 2016 13:57:32 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

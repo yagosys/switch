@@ -103,10 +103,33 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a1c759b1d7261446f14cecfc51e3777cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a073717f19037971ea71f8edbf059a1a8"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__acl__opt__action__params__.html#a073717f19037971ea71f8edbf059a1a8">counter_handle</a></td></tr>
 <tr class="separator:a073717f19037971ea71f8edbf059a1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9641f1ed7f4cafe248fb57354c4922ff"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__acl__opt__action__params__.html#a9641f1ed7f4cafe248fb57354c4922ff">nat_mode</a></td></tr>
+<tr class="separator:a9641f1ed7f4cafe248fb57354c4922ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf088a2001ccab5f8193b3a79b4a00ea"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__acl__opt__action__params__.html#abf088a2001ccab5f8193b3a79b4a00ea">tc</a></td></tr>
+<tr class="separator:abf088a2001ccab5f8193b3a79b4a00ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bab0475bec6809fc0c1ca55af50e552"><td class="memItemLeft" align="right" valign="top">switch_color_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__acl__opt__action__params__.html#a3bab0475bec6809fc0c1ca55af50e552">color</a></td></tr>
+<tr class="separator:a3bab0475bec6809fc0c1ca55af50e552"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d854da22f7bf54651c8fb05cd51599d"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__acl__opt__action__params__.html#a6d854da22f7bf54651c8fb05cd51599d">ingress_cos</a></td></tr>
+<tr class="separator:a6d854da22f7bf54651c8fb05cd51599d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ad0767eda1ff0b1802993f3c613bc9"><td class="memItemLeft" align="right" valign="top">switch_qid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__acl__opt__action__params__.html#ad0ad0767eda1ff0b1802993f3c613bc9">queue_id</a></td></tr>
+<tr class="separator:ad0ad0767eda1ff0b1802993f3c613bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Acl optional action parameters </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a3bab0475bec6809fc0c1ca55af50e552"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_color_t switch_acl_opt_action_params_::color</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>packet color </p>
+
+</div>
+</div>
 <a class="anchor" id="ab257b14cc3d1e2e0c6a907dafd194274"></a>
 <div class="memitem">
 <div class="memproto">
@@ -130,6 +153,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>counter handle </p>
+
+</div>
+</div>
+<a class="anchor" id="a6d854da22f7bf54651c8fb05cd51599d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t switch_acl_opt_action_params_::ingress_cos</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>ingress cos </p>
 
 </div>
 </div>
@@ -159,6 +195,32 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9641f1ed7f4cafe248fb57354c4922ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t switch_acl_opt_action_params_::nat_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>nat mode </p>
+
+</div>
+</div>
+<a class="anchor" id="ad0ad0767eda1ff0b1802993f3c613bc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_qid_t switch_acl_opt_action_params_::queue_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>queue id </p>
+
+</div>
+</div>
 <a class="anchor" id="ac015d7727a6af66735d176f0ef8219ce"></a>
 <div class="memitem">
 <div class="memproto">
@@ -172,13 +234,26 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="abf088a2001ccab5f8193b3a79b4a00ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t switch_acl_opt_action_params_::tc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>traffic class </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="switch__acl_8h_source.html">switch_acl.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 17:14:14 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 3 2016 13:57:32 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -102,10 +102,14 @@ Functions</h2></td></tr>
 <tr class="separator:gacb2280f6cf933fe492ad0c179fa17a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17fb32d01fe4402ca07d6937d518c355"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#ga17fb32d01fe4402ca07d6937d518c355">switch_api_l3_interface_address_delete</a> (switch_device_t device, switch_handle_t interface_handle, switch_handle_t vrf, <a class="el" href="structswitch__ip__addr__.html">switch_ip_addr_t</a> *ip_addr)</td></tr>
 <tr class="separator:ga17fb32d01fe4402ca07d6937d518c355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92083d721324e55a3064c6696dc38ee7"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#ga92083d721324e55a3064c6696dc38ee7">switch_api_l3_route_nhop_intf_get</a> (switch_device_t device, switch_handle_t vrf, <a class="el" href="structswitch__ip__addr__.html">switch_ip_addr_t</a> *ip_addr, switch_handle_t *intf_handle)</td></tr>
+<tr class="separator:ga92083d721324e55a3064c6696dc38ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeecf14b96b55d3a1de78310712f3b412"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#gaeecf14b96b55d3a1de78310712f3b412">switch_api_l3_route_add</a> (switch_device_t device, switch_handle_t vrf, <a class="el" href="structswitch__ip__addr__.html">switch_ip_addr_t</a> *ip_addr, switch_handle_t nhop_handle)</td></tr>
 <tr class="separator:gaeecf14b96b55d3a1de78310712f3b412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9c3c2e8a9326a810eb3d682e0644cb99"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#ga9c3c2e8a9326a810eb3d682e0644cb99">switch_api_l3_route_delete</a> (switch_device_t device, switch_handle_t vrf, <a class="el" href="structswitch__ip__addr__.html">switch_ip_addr_t</a> *ip_addr, switch_handle_t nhop_handle)</td></tr>
 <tr class="separator:ga9c3c2e8a9326a810eb3d682e0644cb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f4737ef1b51921149f5496e39701c9e"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#ga9f4737ef1b51921149f5496e39701c9e">switch_api_l3_route_lookup</a> (switch_device_t device, switch_handle_t vrf, <a class="el" href="structswitch__ip__addr__.html">switch_ip_addr_t</a> *ip_addr, switch_handle_t *nhop_handle)</td></tr>
+<tr class="separator:ga9f4737ef1b51921149f5496e39701c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3625392248b6872ea13de040e62a98b9"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#ga3625392248b6872ea13de040e62a98b9">switch_api_interface_ipv4_urpf_mode_set</a> (switch_handle_t intf_handle, uint64_t value)</td></tr>
 <tr class="separator:ga3625392248b6872ea13de040e62a98b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8049e232e17f255a7da9684ef962d02a"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#ga8049e232e17f255a7da9684ef962d02a">switch_api_interface_ipv4_urpf_mode_get</a> (switch_handle_t intf_handle, uint64_t *value)</td></tr>
@@ -124,6 +128,8 @@ Functions</h2></td></tr>
 <tr class="separator:gaabf8be0438ddfe8bb00cdb52896b026e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8f390a9a0b397055a8e383a2edc24c2e"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#ga8f390a9a0b397055a8e383a2edc24c2e">switch_api_l3_routes_print_all</a> (void)</td></tr>
 <tr class="separator:ga8f390a9a0b397055a8e383a2edc24c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6809af06a854bf49ce442ad4a99c3e38"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#ga6809af06a854bf49ce442ad4a99c3e38">switch_api_mtu_create_entry</a> (switch_device_t device, uint16_t mtu_index, uint32_t mtu)</td></tr>
+<tr class="separator:ga6809af06a854bf49ce442ad4a99c3e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>API functions create IP interfaces and route </p>
@@ -431,7 +437,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Host address reachability entry - inserted into a Hash table to match a /32 IPv4 ot /128 IPv6 address, When there are multiple paths to reach the same destiantion ECMP tables is used implicitly </p>
+<p>Prefix/Host address reachability entry - inserted into a host table to match a /32 IPv4 ot /128 IPv6 address, When there are multiple paths to reach the same destiantion ECMP tables is used implicitly </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>device </td></tr>
@@ -479,7 +485,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Host address entry delete </p>
+<p>Prefix/Host address entry delete </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>device </td></tr>
@@ -543,6 +549,102 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">vrf_handle</td><td>Vrf handle </td></tr>
     <tr><td class="paramname">iterator_fn</td><td>- Iterator function to be called </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9f4737ef1b51921149f5496e39701c9e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_l3_route_lookup </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>vrf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structswitch__ip__addr__.html">switch_ip_addr_t</a> *&#160;</td>
+          <td class="paramname"><em>ip_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t *&#160;</td>
+          <td class="paramname"><em>nhop_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lookup FIB table (host or LPM) for a given host address Return nexthop handle (single path or ECMP group) Return INVALID_HANDLE if lookup fails </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">vrf</td><td>virtual domain identifier </td></tr>
+    <tr><td class="paramname">ip_addr</td><td>IP address </td></tr>
+    <tr><td class="paramname">nhop_handle</td><td>pointer to return Nexthop Handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga92083d721324e55a3064c6696dc38ee7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_l3_route_nhop_intf_get </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>vrf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structswitch__ip__addr__.html">switch_ip_addr_t</a> *&#160;</td>
+          <td class="paramname"><em>ip_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t *&#160;</td>
+          <td class="paramname"><em>intf_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get the handle of the interface that route lookup returns for a host addr If the nexthop is ECMP group, return INVALID_HANDLE </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">vrf</td><td>virtual domain identifier </td></tr>
+    <tr><td class="paramname">ip_addr</td><td>IP address (host or prefix) </td></tr>
+    <tr><td class="paramname">intf_handle</td><td>pointer to return Interface handle </td></tr>
   </table>
   </dd>
 </dl>
@@ -634,10 +736,51 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga6809af06a854bf49ce442ad4a99c3e38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_mtu_create_entry </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>mtu_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>mtu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>create mtu entry </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">mtu_index</td><td>mtu index </td></tr>
+    <tr><td class="paramname">mtu</td><td>mtu value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 17:14:14 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 3 2016 13:57:32 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

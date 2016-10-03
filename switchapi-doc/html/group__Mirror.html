@@ -114,10 +114,10 @@ Enumerations</h2></td></tr>
 <a class="el" href="group__Mirror.html#gga5a8fd0899bf538277ebb3cb38c13efe1a8cd963c56112e2c351c75b91daf4dec5">SWITCH_MIRROR_SESSION_TYPE_COALESCE</a>
  }</td></tr>
 <tr class="separator:ga5a8fd0899bf538277ebb3cb38c13efe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga083735eb1cc7380050bd9d88edaadbf4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Mirror.html#ga083735eb1cc7380050bd9d88edaadbf4">switch_mirror_type_t</a> { <a class="el" href="group__Mirror.html#gga083735eb1cc7380050bd9d88edaadbf4aada4ffe3211d84da5cb7ef49cb469fed">SWITCH_MIRROR_TYPE_NONE</a> = 0, 
-<a class="el" href="group__Mirror.html#gga083735eb1cc7380050bd9d88edaadbf4adfaf8f0b4e6d71f817366a9feccbc31c">SWITCH_MIRROR_TYPE_LOCAL</a> = 1, 
-<a class="el" href="group__Mirror.html#gga083735eb1cc7380050bd9d88edaadbf4a0fd4e6df151d5523aebd95c28a3cdf96">SWITCH_MIRROR_TYPE_REMOTE</a> = 2, 
-<a class="el" href="group__Mirror.html#gga083735eb1cc7380050bd9d88edaadbf4a5c4992efa3cf1fbc78d6e0c6583f051c">SWITCH_MIRROR_TYPE_ENHANCED_REMOTE</a> = 3
+<tr class="memitem:ga083735eb1cc7380050bd9d88edaadbf4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Mirror.html#ga083735eb1cc7380050bd9d88edaadbf4">switch_mirror_type_t</a> { <b>SWITCH_MIRROR_TYPE_NONE</b> = 0, 
+<b>SWITCH_MIRROR_TYPE_LOCAL</b> = 1, 
+<b>SWITCH_MIRROR_TYPE_REMOTE</b> = 2, 
+<b>SWITCH_MIRROR_TYPE_ENHANCED_REMOTE</b> = 3
  }</td></tr>
 <tr class="separator:ga083735eb1cc7380050bd9d88edaadbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -135,7 +135,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga0db45ae4f670c24a39e8a97867612612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>API functions define and manipulate Access lists </p>
+<p>API functions to manage mirror sessions </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga9569fbb2f576f139948976594d716974"></a>
 <div class="memitem">
@@ -213,7 +213,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Mirror Session Type </p>
+<p>Mirror Session type </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga5a8fd0899bf538277ebb3cb38c13efe1afd3d9e04b6ea738821088d37bb2a34ce"></a>SWITCH_MIRROR_SESSION_TYPE_SIMPLE</em>&#160;</td><td class="fielddoc">
 <p>Simple Mirror session </p>
@@ -238,20 +238,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Mirror Type </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga083735eb1cc7380050bd9d88edaadbf4aada4ffe3211d84da5cb7ef49cb469fed"></a>SWITCH_MIRROR_TYPE_NONE</em>&#160;</td><td class="fielddoc">
-<p>None </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga083735eb1cc7380050bd9d88edaadbf4adfaf8f0b4e6d71f817366a9feccbc31c"></a>SWITCH_MIRROR_TYPE_LOCAL</em>&#160;</td><td class="fielddoc">
-<p>Local </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga083735eb1cc7380050bd9d88edaadbf4a0fd4e6df151d5523aebd95c28a3cdf96"></a>SWITCH_MIRROR_TYPE_REMOTE</em>&#160;</td><td class="fielddoc">
-<p>RSPAN </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga083735eb1cc7380050bd9d88edaadbf4a5c4992efa3cf1fbc78d6e0c6583f051c"></a>SWITCH_MIRROR_TYPE_ENHANCED_REMOTE</em>&#160;</td><td class="fielddoc">
-<p>ERSPAN </p>
-</td></tr>
-</table>
 
 </div>
 </div>
@@ -313,7 +299,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Delete the mirror session </p>
+<p>delete the mirror session </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">device</td><td>device </td></tr>
@@ -443,7 +429,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 17:14:14 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 3 2016 13:57:32 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

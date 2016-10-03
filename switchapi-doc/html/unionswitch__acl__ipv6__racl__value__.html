@@ -99,14 +99,27 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a8b202827d01d8efa7d9dcea3f4c1bf2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed47aec3943c40b370dfe8bb4119277e"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__ipv6__racl__value__.html#aed47aec3943c40b370dfe8bb4119277e">ip_proto</a></td></tr>
 <tr class="separator:aed47aec3943c40b370dfe8bb4119277e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae815c154bdfe06464bc946e7674a36af"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__ipv6__racl__value__.html#ae815c154bdfe06464bc946e7674a36af">l4_source_port</a></td></tr>
-<tr class="separator:ae815c154bdfe06464bc946e7674a36af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0251773078678e102257534c380c985"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__ipv6__racl__value__.html#ac0251773078678e102257534c380c985">l4_dest_port</a></td></tr>
-<tr class="separator:ac0251773078678e102257534c380c985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c2c1b519b8d294255df4fdb0f669830"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__ipv6__racl__value__.html#a7c2c1b519b8d294255df4fdb0f669830">sport_range_handle</a></td></tr>
+<tr class="separator:a7c2c1b519b8d294255df4fdb0f669830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a93fe1bc90f91ca2ef0356b49933520"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__ipv6__racl__value__.html#a6a93fe1bc90f91ca2ef0356b49933520">dport_range_handle</a></td></tr>
+<tr class="separator:a6a93fe1bc90f91ca2ef0356b49933520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Acl ipv6 racl field list </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a6a93fe1bc90f91ca2ef0356b49933520"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_handle_t switch_acl_ipv6_racl_value_::dport_range_handle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>dport range handle </p>
+
+</div>
+</div>
 <a class="anchor" id="aed47aec3943c40b370dfe8bb4119277e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -146,29 +159,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac0251773078678e102257534c380c985"></a>
+<a class="anchor" id="a7c2c1b519b8d294255df4fdb0f669830"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned short switch_acl_ipv6_racl_value_::l4_dest_port</td>
+          <td class="memname">switch_handle_t switch_acl_ipv6_racl_value_::sport_range_handle</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>destination port </p>
-
-</div>
-</div>
-<a class="anchor" id="ae815c154bdfe06464bc946e7674a36af"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned short switch_acl_ipv6_racl_value_::l4_source_port</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>source port </p>
+<p>sport range handle </p>
 
 </div>
 </div>
@@ -178,7 +178,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 17:14:14 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 3 2016 13:57:32 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

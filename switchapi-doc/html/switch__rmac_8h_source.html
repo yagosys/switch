@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_7d19a50f4ea3ed76394accca6115dd61.html">switchapi</a></li><li class="navelem"><a class="el" href="dir_d8f5e03f280a7c5c86765fa80f5c64a4.html">inc</a></li><li class="navelem"><a class="el" href="dir_27ed3573c445ec63d9043c76ed527ed1.html">switchapi</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_7d19a50f4ea3ed76394accca6115dd61.html">switchapi</a></li><li class="navelem"><a class="el" href="dir_8f6b30975874dac077baa4bebb773d68.html">include</a></li><li class="navelem"><a class="el" href="dir_e4ffa6860e05339f49e918c9a66bd80e.html">switchapi</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -111,29 +111,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span> <span class="comment">// begin of Router MAC API</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor"></span>  <span class="comment">// begin of Router MAC API</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;switch_handle_t <a class="code" href="group__RMAC.html#ga441726222e3874812a9e436128425d0b">switch_api_router_mac_group_create</a>(switch_device_t device);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;switch_status_t <a class="code" href="group__RMAC.html#ga1fe932581efe2e6d23eae62948c7af73">switch_api_router_mac_group_delete</a>(switch_device_t device, switch_handle_t rmac_handle);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;switch_status_t <a class="code" href="group__RMAC.html#gaf7075557751cd1bbd2207b64f9e9cdc6">switch_api_router_mac_add</a>(switch_device_t device, switch_handle_t rmac_handle, <a class="code" href="structswitch__mac__addr.html">switch_mac_addr_t</a> *mac);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;switch_status_t <a class="code" href="group__RMAC.html#ga26a5d3b6f7ac4e58caa66f5f26d6f659">switch_api_router_mac_delete</a>(switch_device_t device, switch_handle_t rmac_handle, <a class="code" href="structswitch__mac__addr.html">switch_mac_addr_t</a> *mac);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;switch_status_t <a class="code" href="group__RMAC.html#gaa5e0607c3d4b70f3ac06387f91e1d57e">switch_api_interface_router_mac_handle_set</a>(switch_handle_t intf_handle, uint64_t value);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;switch_status_t <a class="code" href="group__RMAC.html#gaf6f9222211205cf37da102c6948ca7e8">switch_api_interface_router_mac_handle_get</a>(switch_handle_t intf_handle, uint64_t *value);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;switch_status_t <a class="code" href="group__RMAC.html#ga95c1c0cc29f9227a5a0ee81d1e568a3c">switch_api_router_mac_group_print_all</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; <span class="comment">// end of Router MAC API</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;switch_status_t <a class="code" href="group__RMAC.html#ga1fe932581efe2e6d23eae62948c7af73">switch_api_router_mac_group_delete</a>(switch_device_t device,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                   switch_handle_t rmac_handle);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;switch_status_t <a class="code" href="group__RMAC.html#gaf7075557751cd1bbd2207b64f9e9cdc6">switch_api_router_mac_add</a>(switch_device_t device,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                          switch_handle_t rmac_handle,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                          <a class="code" href="structswitch__mac__addr.html">switch_mac_addr_t</a> *mac);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;switch_status_t <a class="code" href="group__RMAC.html#ga26a5d3b6f7ac4e58caa66f5f26d6f659">switch_api_router_mac_delete</a>(switch_device_t device,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                             switch_handle_t rmac_handle,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                             <a class="code" href="structswitch__mac__addr.html">switch_mac_addr_t</a> *mac);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;switch_status_t <a class="code" href="group__RMAC.html#gaa5e0607c3d4b70f3ac06387f91e1d57e">switch_api_interface_router_mac_handle_set</a>(</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    switch_handle_t intf_handle, uint64_t value);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;switch_status_t <a class="code" href="group__RMAC.html#gaf6f9222211205cf37da102c6948ca7e8">switch_api_interface_router_mac_handle_get</a>(</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    switch_handle_t intf_handle, uint64_t *value);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;switch_status_t <a class="code" href="group__RMAC.html#ga95c1c0cc29f9227a5a0ee81d1e568a3c">switch_api_router_mac_group_print_all</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="comment">// end of Router MAC API</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="group__RMAC_html_ga95c1c0cc29f9227a5a0ee81d1e568a3c"><div class="ttname"><a href="group__RMAC.html#ga95c1c0cc29f9227a5a0ee81d1e568a3c">switch_api_router_mac_group_print_all</a></div><div class="ttdeci">switch_status_t switch_api_router_mac_group_print_all(void)</div></div>
-<div class="ttc" id="structswitch__mac__addr_html"><div class="ttname"><a href="structswitch__mac__addr.html">switch_mac_addr</a></div><div class="ttdef"><b>Definition:</b> switch_base_types.h:88</div></div>
+<div class="ttc" id="structswitch__mac__addr_html"><div class="ttname"><a href="structswitch__mac__addr.html">switch_mac_addr</a></div><div class="ttdef"><b>Definition:</b> switch_base_types.h:86</div></div>
 <div class="ttc" id="group__RMAC_html_gaf7075557751cd1bbd2207b64f9e9cdc6"><div class="ttname"><a href="group__RMAC.html#gaf7075557751cd1bbd2207b64f9e9cdc6">switch_api_router_mac_add</a></div><div class="ttdeci">switch_status_t switch_api_router_mac_add(switch_device_t device, switch_handle_t rmac_handle, switch_mac_addr_t *mac)</div></div>
 <div class="ttc" id="group__RMAC_html_ga441726222e3874812a9e436128425d0b"><div class="ttname"><a href="group__RMAC.html#ga441726222e3874812a9e436128425d0b">switch_api_router_mac_group_create</a></div><div class="ttdeci">switch_handle_t switch_api_router_mac_group_create(switch_device_t device)</div></div>
 <div class="ttc" id="group__RMAC_html_gaa5e0607c3d4b70f3ac06387f91e1d57e"><div class="ttname"><a href="group__RMAC.html#gaa5e0607c3d4b70f3ac06387f91e1d57e">switch_api_interface_router_mac_handle_set</a></div><div class="ttdeci">switch_status_t switch_api_interface_router_mac_handle_set(switch_handle_t intf_handle, uint64_t value)</div></div>
@@ -143,7 +150,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 23 2016 17:14:14 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 3 2016 13:57:32 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tunnel_20api',['Tunnel API',['../group__Tunnel.html',1,'']]]
+  ['qos_20api',['QOS API',['../group__QOS.html',1,'']]],
+  ['queue_20api',['QUEUE API',['../group__QUEUE.html',1,'']]]
 ];
